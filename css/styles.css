@@ -16,6 +16,7 @@
     --gray-fill-color:#AFB1B8;
     --blue-fill-color: #2196f3;
     --white-fill-color:#ffffff;
+    --grayeness-fill-color: #757575;
 
     --items: 3;
     --margins:30px;
@@ -236,10 +237,25 @@ color: var(--white-txt-color);
 
 
 .contacts:hover,
-.contacts:focus 
+.contacts:focus
 {
     color: var(--blue-txt-color);
+    
 }
+
+
+.contacts:hover .mail,
+.contacts:focus .mail {
+    color: var(--blue-txt-color);
+    fill: var(--blue-fill-color);
+}
+
+.contacts:hover .tel,
+.contacts:focus .tel {
+    color: var(--blue-txt-color);
+    fill: var(--blue-fill-color);
+}
+
 
 
 .no-points {
@@ -271,10 +287,20 @@ color: var(--white-txt-color);
    
 }
 
+.mail {
+    fill:var(--grayeness-fill-color);
+    margin-right: 10px;
+}
+
+.tel {
+fill: var(--grayeness-fill-color);
+    margin-right: 10px;
+}
+
 .address-style:hover,
-.address-style:focus
-{
+.address-style:focus {
     color: var(--blue-txt-color);
+  
 }
 
 
@@ -376,7 +402,15 @@ padding-bottom: 200px;
      
 }
 
-
+.pictogramms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--whitness-bg-color);
+    margin-bottom: 30px;
+}
 
 .benefits
 {
