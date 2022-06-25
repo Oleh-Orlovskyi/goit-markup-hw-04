@@ -283,6 +283,7 @@ color: var(--white-txt-color);
     text-decoration: none;
     margin-left: 0;;
     list-style: none;
+    margin-right: 72px;
     
    
 }
@@ -309,15 +310,24 @@ fill: var(--grayeness-fill-color);
     display: block;
         flex-direction: column;
         padding-left: 0;
+        max-width: 231px;
        
         
 }
 
+.footer-union {
+    display: flex;
+    
+}
+
+
 .footer-bg
 {
+    
 padding-bottom: 60px;
  padding-top: 60px;
  background-color:var(--darkness-bg-color)
+ 
  
 }
 
@@ -348,6 +358,7 @@ text-decoration: none;
 word-spacing: -0.29em;
 margin-bottom: 20px;
 
+
 }
 
 .logo-footer-part-2 
@@ -356,10 +367,7 @@ margin-bottom: 20px;
        
 }
 
-.social-media-bg {
-    background-color: rgba(255, 255, 255, 0.1);
-   
-}
+
 
 
 .smi-footer {
@@ -367,9 +375,9 @@ fill: #ffffff;
 }
 
 .welcome {
-  
-    margin-right: 70px;
-   
+min-width: 206px;
+padding-top: 12px;
+color: var(--white-fill-color);
 }
 
 .welcome-title {
@@ -384,6 +392,7 @@ fill: #ffffff;
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    margin-left: -12px;
     
 }
 
@@ -554,6 +563,22 @@ margin-bottom: 10px;
    justify-content: center;
    
 }
+
+.social-media-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-media-bg:hover,
+.social-media-bg:focus {
+    color: var(--white-fill-color);
+    background-color: var(--blue-fill-color);}
 
 .social-media-link {
        display: flex;
