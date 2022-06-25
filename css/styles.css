@@ -185,17 +185,11 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     
 }
 
-.portfolio-link:hover,
-.portfolio-link: :focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-}
+
 
 .btn-order
 {
-    /*display: block;
-    position: centr;*/
-    margin: 0 auto;
+       margin: 0 auto;
     padding: 10px 32px;
 
     background-color: var(--blue-bg-color);
@@ -711,6 +705,16 @@ margin-right: 30px;
     
 }
 
+.portfolio-bg:hover,
+.portfolio-bg:focus {
+   border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-top: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 .border 
 {
 border-left: 1px solid #EEEEEE;
@@ -718,7 +722,10 @@ border-right: 1px solid #EEEEEE;
 border-bottom: 1px solid #EEEEEE;
 padding: 20px 24px;
 
+
+
 }
+
 
 .port-list
 {
