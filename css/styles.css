@@ -12,6 +12,11 @@
     --darkness-bg-color: #2F303A;
     --white-bg-color: #ffffff;
 
+
+    --gray-fill-color:#AFB1B8;
+    --blue-fill-color: #2196f3;
+    --white-fill-color:#ffffff;
+
     --items: 3;
     --margins:30px;
      
@@ -465,30 +470,51 @@ margin-bottom: 10px;
 
 }
 
-.social-media-list {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    justify-content: center;
+.list {
+   list-style: none;
+        margin: 0;
+        padding: 0;
+}
+
+.social-media {
+   display: flex;
+   justify-content: center;
    
 }
 
-social-media-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.social-media-link {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: var(--gray-fill-color);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+                
+    
   
 }
+
 
 .social-media-item:not(:last-child) {
     margin-right: 10px;
 }
 
+
+.social-media-link:hover,
+.social-media-link:focus {
+color: var(--white-fill-color);
+background-color: var(--blue-fill-color);
+}
+
 .social-media-icon {
-    outline: 1px solid red;
+  fill: currentColor;
+}
+
+
+.social-media-item {
+ 
+   
 }
 
 
@@ -527,7 +553,7 @@ padding: 16px 32px;
 }
 
 .clients-svg {
-    fill:#AFB1B8;
+    fill: var(--gray-fill-color) ;
     width: 106px;
     height: 60px;
 }
@@ -540,7 +566,7 @@ border-color: var(--blue-bg-color);
 
 .clients-icon:hover .clients-svg,
 .clients-icon:focus .clients-svg {
-fill: var(--blue-bg-color);
+fill: var(--blue-fill-color);
 }
 
 .clients-icon {
